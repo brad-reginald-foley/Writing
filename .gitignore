@@ -1,0 +1,11 @@
+# Writing META-repo: version the framework + agent + idea intake ONLY — keep it share-worthy.
+# Everything else is excluded by the allow-list below:
+#   - novel PROJECTS (each its own git repo) and their prose DRAFT folders
+#   - _private/  → idea seeds, the author's personal watch-fors, project list (NEVER shared)
+# (The template's framework/novel-template/drafts/ scaffold IS kept — it's under framework/.)
+/*
+!/.gitignore
+!/CLAUDE.md
+!/README.md
+!/ideas.md
+!/framework

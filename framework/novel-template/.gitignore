@@ -1,0 +1,15 @@
+# Project repo. NOTE: prose DRAFTS are tracked here — the work is versioned.
+.DS_Store
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+
+# LaTeX / pandoc build artifacts (future)
+out/
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
