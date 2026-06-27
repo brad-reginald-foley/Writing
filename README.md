@@ -22,17 +22,20 @@ organizes, and *pushes back*.
   stay unambiguous per project and each book can have its own remote).
 - **This repo = the meta-workspace** — it versions only the framework, agent, and intake.
 - **Private content** (your idea seeds, personal writing tendencies, identity, and project
-  premises) lives in a gitignored **`_private/`** folder, so this base stays share-worthy. Because
-  it's gitignored it is **not backed up** to this repo's remote — if you want it backed up, keep
-  `_private/` as its own separate private repo.
+  premises) lives in a gitignored **`_private/`** folder, so this base stays share-worthy. Scaffold it
+  from **`framework/private-template/`** and make it **its own private repo** — that backs it up *and*
+  turns it into the **bootstrap entry point** (its `repos.md` + `bootstrap.md` rebuild the entire
+  workspace on any machine from a single clone).
 
 ## Setup — clone it and make it yours
 1. **Fork / clone** this repo, and point its `origin` at **your own** remote (don't push to someone
    else's). Each of your novels gets its *own* repo later, so this one only ever holds the pipeline.
 2. **Open the folder in Claude Code.** On the first session the agent notices there's no `_private/`
-   and **interviews you** to create it — your name, the git identity to commit your prose under,
-   your GitHub namespace for new project repos, and your personal notes. Everything identifying you
-   stays in `_private/` (gitignored); the tracked files stay generic.
+   and sets it up from `framework/private-template/`, **interviewing you** for your name, git
+   identity, GitHub namespace, and notes. Everything identifying you stays in `_private/` (gitignored;
+   tracked files stay generic) — and the agent offers to make `_private/` **its own private repo**, so
+   it's backed up and becomes a **one-clone bootstrap**: on a new machine, clone that repo and its
+   `repos.md`/`bootstrap.md` reassemble the whole workspace (pipeline + every book).
 3. **Start dumping ideas.** Seeds land in `_private/seeds.md`; develop them through the framework;
    promote a strong one into its own project repo (`cp -R framework/novel-template/ <Name>/`).
 4. **Personalize freely.** As the agent learns your tics it grows `_private/blind-spots-personal.md`.

@@ -8,17 +8,17 @@ folder holds multiple novel projects, a shared **framework**, and an **idea inta
 ## First run — set up `_private/` before anything else
 At the start of a session, check whether **`_private/`** exists.
 
-**If it's missing** (a fresh clone), create it. It holds everything personal or identifying and is
-gitignored — it never enters this repo. Briefly interview the author, then write:
-- **`_private/author.md`** — their name; the **git identity** (name + email) to use for *their*
-  commits; their **GitHub namespace** (e.g. `your-username`) for creating project remotes; and any
-  working preferences worth carrying over.
-- **`_private/blind-spots-personal.md`** — a short (can start empty) list of the author's *own*
-  recurring tendencies; you grow it as you learn them. See `framework/blind-spots.md`.
-- **`_private/seeds.md`** — their private idea seeds (same shape as the template in `ideas.md`).
-- **`_private/projects.md`** — their live project list + repo names + (private) loglines.
-- **`_private/README.md`** — a one-paragraph note: *gitignored personal content; NOT backed up to
-  the Writing remote — keep it as its own private repo if you want a backup.*
+**If it's missing** (a fresh clone), set it up from the template. It holds everything personal or
+identifying, is gitignored (never enters this repo), and becomes the author's **own private repo +
+bootstrap entry point** — so it's backed up and one clone can reassemble the whole workspace:
+1. `cp -R framework/private-template/ _private/`
+2. **Interview the author** to fill `author.md` (name, git identity, GitHub namespace, working
+   preferences) and `repos.md` (their pipeline + book repos). See `framework/private-template/README.md`.
+3. **Offer to make it its own private repo** + offsite backup:
+   `cd _private && git init && git add -A && git commit && gh repo create <user>/<name> --private --source=. --push`.
+   Then add its row (and each book's) to `_private/repos.md`.
+The template also carries `bootstrap.md` (rebuild on a new machine) and a control `CLAUDE.md` (used
+when Claude is launched *inside* `_private`).
 
 **If it exists,** read **`_private/author.md`** at the start of the session for identity + prefs.
 
@@ -68,10 +68,12 @@ Writing/                          ← this meta-repo (your fork's remote)
 ├── framework/
 │   ├── the-framework.md ← the development method (READ THIS)
 │   ├── blind-spots.md   ← common craft shortfalls (APPLY THIS)
-│   └── novel-template/  ← copyable project skeleton (premise/characters/world/arc/
-│                          questions.md/craft-lenses/workflow/.gitignore/…)
-├── _private/            ← GITIGNORED, not shared, not backed up: author.md, seeds.md,
-│                          blind-spots-personal.md, projects.md, README.md
+│   ├── novel-template/  ← copyable project skeleton (premise/characters/world/arc/
+│   │                      questions.md/craft-lenses/workflow/.gitignore/…)
+│   └── private-template/ ← copyable skeleton for the author's _private repo (author.md/
+│                          repos.md/bootstrap.md/control CLAUDE.md/…)
+├── _private/            ← GITIGNORED, not shared: the author's OWN private repo (from
+│                          framework/private-template/) — author.md, repos.md, bootstrap.md, seeds…
 └── <Project>/          ← each novel = its OWN Obsidian vault + git repo (one folder per book)
 ```
 This meta-repo versions **only the 4 tracked paths above** (agent + framework + intake). Project
