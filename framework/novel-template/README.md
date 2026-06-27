@@ -13,10 +13,12 @@ See `../the-framework.md` for the method.*
 *(one sentence — the what-if + the hook)*
 
 ## Map of content
-**Start here:** [[premise]] · [[themes]] · [[craft-lenses]] · [[naming]]
+**Start here:** [[premise]] · [[themes]] · [[craft-audit]] · [[naming]]
 **Characters:** [[characters]]
 **Worldbuilding:** [[world]]
 **Plot:** [[arc]]
+**Shared method (read-only, in the pipeline):** `../framework/the-framework.md` ·
+`../framework/craft-lenses.md` · `../framework/workflow.md` · `../framework/blind-spots.md`
 
 ## Status
 - **<date>** — project created from template.

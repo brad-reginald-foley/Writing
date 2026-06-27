@@ -69,16 +69,30 @@ Writing/                          ← this meta-repo (your fork's remote)
 │   ├── the-framework.md ← the development method (READ THIS)
 │   ├── blind-spots.md   ← common craft shortfalls (APPLY THIS)
 │   ├── novel-template/  ← copyable project skeleton (premise/characters/world/arc/
-│   │                      questions.md/craft-lenses/workflow/.gitignore/…)
+│   │                      questions.md/craft-audit/CLAUDE.md/.gitignore/…)
+│   ├── workflow.md         ← shared per-chapter routine + conventions (projects reference this)
+│   ├── craft-lenses.md     ← shared diagnostic lens toolkit (projects reference this)
 │   └── private-template/ ← copyable skeleton for the author's _private repo (author.md/
 │                          repos.md/bootstrap.md/control CLAUDE.md/…)
 ├── _private/            ← GITIGNORED, not shared: the author's OWN private repo (from
 │                          framework/private-template/) — author.md, repos.md, bootstrap.md, seeds…
 └── <Project>/          ← each novel = its OWN Obsidian vault + git repo (one folder per book)
 ```
-This meta-repo versions **only the 4 tracked paths above** (agent + framework + intake). Project
-subfolders are **their own repos**; **`_private/` and prose draft folders never enter this
+This meta-repo versions **only the tracked paths above** (agent + framework + intake + `tools/`).
+Project subfolders are **their own repos**; **`_private/` and prose draft folders never enter this
 meta-repo** (see `.gitignore`) — that's what keeps the base share-worthy.
+
+## Workspace hygiene (super-repo of nested repos) — DO NOT SKIP
+`Writing/` gitignores its nested repos (`_private/`, each book), so **git here is blind to them** —
+a dirty/unpushed subfolder will not show in this repo's `git status`. Therefore:
+- **At session start**, run `tools/sync.ps1 pull` (or `tools/sync.sh`) to fast-forward every repo.
+- **Never declare work "done"** until `tools/sync.ps1 status` shows every repo **clean or
+  intentionally committed** — check the nested repo you edited, not just `Writing/`.
+- **Commit per repo** (separate histories); a cross-repo change = one commit in each affected repo.
+- **Then `tools/sync.ps1 push`** — committed ≠ backed up until pushed. The tool pushes only on that
+  explicit command.
+- Heed its **PRIVACY** warning (something personal about to enter the public repo) and
+  **UNREGISTERED** warning (a book missing from `_private/repos.md`). Full rules: `tools/README.md`.
 
 ## Setting up a NEW project from the template
 1. `cp -R framework/novel-template/ <Name>/`  (a new subfolder of `Writing/`).
@@ -94,8 +108,8 @@ meta-repo** (see `.gitignore`) — that's what keeps the base share-worthy.
   **Develop** via `framework/the-framework.md`. **Promote** a strong one → a new project (above).
 - **Every session:** push sharp questions, keep `questions.md` current, run research passes, file
   canon, and be the honest critic (check `blind-spots.md`).
-- **Drafting projects** also run the per-chapter review routine (see a project's `workflow.md`;
-  the template's `workflow.md` is the worked example).
+- **Drafting projects** also run the per-chapter review routine (see `framework/workflow.md` —
+  the shared routine; a project logs its lens findings in its own `craft-audit.md`).
 
 ## Per-project deep work
 For deep work on one novel, **open a Claude session inside that project's folder** (loads its own

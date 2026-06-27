@@ -12,7 +12,9 @@ organizes, and *pushes back*.
 - **`framework/the-framework.md`** — the **method**: concept → characters (Want/Need/Lie +
   opposition web) → setting → arc → diagnostic lenses → drafting pipeline.
 - **`framework/novel-template/`** — a **copyable project skeleton** (premise / themes / characters /
-  worldbuilding / plot / `questions.md` / `craft-lenses.md` / `workflow.md` / chapter meta-template).
+  worldbuilding / plot / `questions.md` / `craft-audit.md` / thin `CLAUDE.md` / chapter meta-template).
+- **`framework/workflow.md`** & **`framework/craft-lenses.md`** — the **shared** per-chapter routine
+  and diagnostic lens toolkit; every project *references* these rather than copying them.
 - **`framework/blind-spots.md`** — a **watchlist** of common craft shortfalls, checked against every
   chapter and idea.
 - **`ideas.md`** — an **idea intake** (a seed format) for half-baked novels.

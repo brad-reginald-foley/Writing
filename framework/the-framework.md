@@ -51,7 +51,7 @@ surprises you, it found something.
 Add: `chapters.md` (index/manifest), `timeline.md`, `continuity.md` (canon + reader-knowledge
 + who-knows-what-when), per-chapter `.meta.md` files, and the **per-chapter review routine**
 (read → honest review → meta → index canon → continuity-check → timeline → commit). Prose in
-`.md`; **assistant never edits prose.** See the template's `workflow.md` for the worked version.
+`.md`; **assistant never edits prose.** See `workflow.md` (this folder) for the worked version.
 
 ## Meta-principles (what makes it work)
 - **Capture everything; write twice as much as you keep.** Assess later.
@@ -71,5 +71,5 @@ keep it live, close it when decided.
 
 ## Files a project tends to grow (see `novel-template/`)
 `README.md` (index) · `premise.md` · `themes.md` · `characters.md` (+ `characters/`) ·
-`worldbuilding/` · `plot/arc.md` · `craft-lenses.md` · **`questions.md`** · `naming.md` ·
+`worldbuilding/` · `plot/arc.md` · `craft-audit.md` (lens findings) · **`questions.md`** · `naming.md` ·
 `influences.md` · `research/` · `epigraphs.md` — then the drafting pipeline.
