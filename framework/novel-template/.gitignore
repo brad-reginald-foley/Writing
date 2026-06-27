@@ -1,8 +1,15 @@
 # Project repo. NOTE: prose DRAFTS are tracked here — the work is versioned.
+
+# OS cruft
 .DS_Store
+Thumbs.db
+
+# Obsidian — volatile per-device state (keep config + plugins tracked)
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
+.obsidian/graph.json
 .obsidian/cache/
+.trash/
 
 # LaTeX / pandoc build artifacts (future)
 out/
