@@ -1,7 +1,6 @@
 # Projects (private)
 
-*Your live project list — titles, loglines/premises (kept private), status, and repo names.
-Cross-reference `repos.md` for remotes + clone paths.*
+*Your live project list — titles, loglines/premises (kept private), status, and repo names. Cross-reference `repos.md` for remotes + clone paths.*
 
 | Project | Status | Logline (private) | Repo |
 |---|---|---|---|

@@ -5,8 +5,7 @@ tags:
 
 # World
 
-*Split into focused notes (institutions, science, places, factions…) as it grows. Keep it
-**load-bearing** — if a piece doesn't serve character/theme/plot, flag it as decoration.*
+*Split into focused notes (institutions, science, places, factions…) as it grows. Keep it **load-bearing** — if a piece doesn't serve character/theme/plot, flag it as decoration.*
 
 ## The rules
 *(how this world works; what's different from ours; grounded in real analogues where possible)*

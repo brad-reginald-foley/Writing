@@ -1,9 +1,6 @@
 # private-template — your personal & bootstrap repo (copy this)
 
-*Copy this whole folder to `_private/` (a sibling of `framework/`, inside your Writing clone), fill it
-in, then make it **its own private git repo**. The Writing repo already gitignores `_private/`, so
-your personal content never enters the shareable pipeline — and your own private repo backs it up and
-becomes the **one clone** that reassembles your whole workspace on a new machine.*
+*Copy this whole folder to `_private/` (a sibling of `framework/`, inside your Writing clone), fill it in, then make it **its own private git repo**. The Writing repo already gitignores `_private/`, so your personal content never enters the shareable pipeline — and your own private repo backs it up and becomes the **one clone** that reassembles your whole workspace on a new machine.*
 
 ## Set it up (from a clean Writing clone)
 1. `cp -R framework/private-template/ _private/`

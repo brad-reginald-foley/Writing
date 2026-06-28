@@ -5,8 +5,7 @@ tags:
 
 # Naming / rename tracker
 
-*Track working names and their replacements so nothing's lost in a swap. Character names are
-**placeholders** until they earn themselves.*
+*Track working names and their replacements so nothing's lost in a swap. Character names are **placeholders** until they earn themselves.*
 
 | Working term | What it stands for | Final name |
 |---|---|---|

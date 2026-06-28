@@ -1,7 +1,6 @@
 # Repo manifest — your whole writing setup
 
-*Infra map for rebuilding on any machine. Creative project *status* lives in `projects.md`; this file
-is just **what repos exist, where they live, how to clone them.** Keep them all private.*
+*Infra map for rebuilding on any machine. Creative project *status* lives in `projects.md`; this file is just **what repos exist, where they live, how to clone them.** Keep them all private.*
 
 **Target layout (any machine):**
 ```

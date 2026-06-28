@@ -1,7 +1,6 @@
 # Bootstrap — rebuild the whole writing workspace on a new machine
 
-*You cloned this repo. Run these steps (or let Claude run them) to get the full setup: the pipeline,
-your private notes, and every book — each on its own remote.*
+*You cloned this repo. Run these steps (or let Claude run them) to get the full setup: the pipeline, your private notes, and every book — each on its own remote.*
 
 ## Prerequisites
 - **git** + **GitHub auth** (`gh auth login`, or SSH/HTTPS creds).
@@ -20,6 +19,5 @@ git clone https://github.com/<you>/<book-one-repo>.git <Book-One>
 
 ## Then
 - Open `~/Documents/Writing` in **Claude Code** → loads the pipeline agent (`Writing/CLAUDE.md`).
-- For deep work on a book, open its folder as its own **Obsidian vault** (enable Dataview) and/or its
-  own Claude session.
+- For deep work on a book, open its folder as its own **Obsidian vault** (enable Dataview) and/or its own Claude session.
 - Keep `repos.md` current when you add a book.

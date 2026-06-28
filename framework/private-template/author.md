@@ -1,12 +1,10 @@
 # Author profile (private)
 
-*The pipeline agent reads this at the start of each session for identity + preferences. It never
-enters the shareable Writing repo (it lives in your gitignored, private `_private/` repo).*
+*The pipeline agent reads this at the start of each session for identity + preferences. It never enters the shareable Writing repo (it lives in your gitignored, private `_private/` repo).*
 
 ## Identity
 - **Name:** `<your name>`
-- **Prose git identity:** `<Name> <email>` — prose commits use this, **no Claude trailer** (the words
-  are 100% yours).
+- **Prose git identity:** `<Name> <email>` — prose commits use this, **no Claude trailer** (the words are 100% yours).
 - **Scaffolding/notes git identity:** your normal git config, **with** the Claude co-author trailer.
 - **GitHub namespace (for new project remotes):** `<your-username>`
 

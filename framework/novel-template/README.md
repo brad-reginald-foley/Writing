@@ -5,20 +5,13 @@ tags:
 
 # <PROJECT> — working notes
 
-*Copy this whole `novel-template/` folder to `Writing/<ProjectName>/`, fill it in, then
-`git init`. Open the project folder as its own Obsidian vault (enable Dataview).
-See `../the-framework.md` for the method.*
+*Copy this whole `novel-template/` folder to `Writing/<ProjectName>/`, fill it in, then `git init`. Open the project folder as its own Obsidian vault (enable Dataview). See `../the-framework.md` for the method.*
 
 ## Logline (draft)
 *(one sentence — the what-if + the hook)*
 
 ## Map of content
-**Start here:** [[premise]] · [[themes]] · [[craft-audit]] · [[naming]]
-**Characters:** [[characters]]
-**Worldbuilding:** [[world]]
-**Plot:** [[arc]]
-**Shared method (read-only, in the pipeline):** `../framework/the-framework.md` ·
-`../framework/craft-lenses.md` · `../framework/workflow.md` · `../framework/blind-spots.md`
+**Start here:** [[premise]] · [[themes]] · [[craft-audit]] · [[naming]] **Characters:** [[characters]] **Worldbuilding:** [[world]] **Plot:** [[arc]] **Shared method (read-only, in the pipeline):** `../framework/the-framework.md` · `../framework/craft-lenses.md` · `../framework/workflow.md` · `../framework/blind-spots.md`
 
 ## Status
 - **<date>** — project created from template.
